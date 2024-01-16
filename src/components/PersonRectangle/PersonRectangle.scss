@@ -1,0 +1,106 @@
+.person-rec {
+  // width: 25.5rem;
+  height: 51.8rem;
+  border-radius: 1.5rem;
+  background: #1c204b;
+  position: sticky;
+  top: 2rem;
+
+  .person {
+    width: 25.5rem;
+    height: 35.4rem;
+    border-radius: 1.5rem;
+    background: #5747ea;
+    display: flex;
+    flex-direction: column;
+    gap: 3.6rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .person-img {
+    width: 13.8rem;
+    height: 14.5rem;
+    border-radius: 50%;
+    border: 0.3rem solid #ffffff;
+    filter: brightness(1.2);
+  }
+
+  .sub-head {
+    padding: 0rem 2.4rem 0rem 2.3rem;
+  }
+
+  .sub-title {
+    color: #bbc0ff;
+    font-family: Rubik;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0.5rem;
+  }
+
+  .heading {
+    color: #fff;
+    font-family: Rubik;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.2rem;
+  }
+
+  .date {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.1rem;
+    padding-top: 2.6rem;
+    padding-left: 3.2rem;
+  }
+}
+
+.date-item {
+  color: #7078c9;
+  cursor: pointer;
+  font-family: Rubik;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 1s;
+}
+
+.date-item:hover {
+  color: #ffffff;
+}
+@media (max-width: 37.5rem) {
+  .person-rec {
+    width: 32.7rem;
+    height: 20.3rem;
+    padding-right: 2rem;
+    .person {
+      width: 32.7rem;
+      height: 13.3rem;
+      flex-direction: row;
+      gap: 2rem;
+    }
+
+    .person-img {
+      width: 6.4rem;
+      height: 6.4rem;
+    }
+    .sub-head {
+      padding: 0rem;
+    }
+    .heading {
+      font-size: 2.4rem;
+      letter-spacing: 0rem;
+    }
+    .date {
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 0rem;
+    }
+  }
+}

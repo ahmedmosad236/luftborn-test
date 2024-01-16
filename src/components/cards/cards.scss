@@ -1,0 +1,9 @@
+.cards {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25.5rem, 1fr));
+  justify-items: center;
+  row-gap: 3rem;
+  column-gap: 3.3rem;
+  list-style: none;
+}

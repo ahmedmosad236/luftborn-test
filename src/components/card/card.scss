@@ -1,0 +1,124 @@
+.card {
+  height: 24.1rem;
+  width: 25.5rem;
+  &-parent {
+    height: 16rem;
+    border-radius: 1.5rem;
+    background-color: #ff8b64;
+  }
+
+  &-child {
+    height: 19.9rem;
+    border-radius: 1.5rem;
+    background-color: #1c204b;
+    transform: translateY(4.2rem);
+    padding-right: 1.4rem;
+    padding-left: 3rem;
+  }
+
+  &-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.6rem;
+    padding: 3.2rem 1.2rem 2.2rem 0rem;
+  }
+
+  &-category {
+    color: #eee;
+    font-family: Rubik;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  &-dots {
+    color: #bbc0ff;
+    cursor: pointer;
+    font-size: 2.7rem;
+    // padding-right: 1rem;
+  }
+
+  &-price {
+    color: #fff;
+    font-family: Rubik;
+    font-size: 3.9rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    // padding-left: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &-title-store {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.4rem;
+    // padding-right: 1.4rem;
+  }
+
+  &-title {
+    color: #bbc0ff;
+    font-family: Rubik;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    // width: 16rem;
+    height: 4.9rem;
+    // padding-left: 3rem;
+  }
+
+  &-store {
+    color: #fff;
+    font-family: Rubik;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    padding-right: 0.5rem;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .card {
+    width: 32.7rem;
+    height: 17rem;
+    &-child {
+      height: 12.2rem;
+      padding-left: 2.4rem;
+      padding-top: 2.8rem;
+    }
+    &-head {
+      padding: 0rem;
+      margin-bottom: 0.7rem;
+    }
+    &-store {
+      display: none;
+    }
+
+    &-hide-store {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 4rem;
+    }
+    &-title-store {
+      gap: 0rem;
+      justify-content: center;
+      align-items: center;
+    }
+    &-title {
+      // width: 12rem;
+      height: 4.5rem;
+      font-size: 1rem;
+      padding-top: 1rem;
+      text-align: center;
+    }
+    &-price {
+      margin: 0rem;
+      padding: 0rem;
+    }
+  }
+}
