@@ -1,5 +1,5 @@
 import "./personRectangle.scss";
-import image from "./Bitmap.png";
+import image from "/Bitmap.png";
 function PersonRectangle() {
   return (
     <div className="person-rec">

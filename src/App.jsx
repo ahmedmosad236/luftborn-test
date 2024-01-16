@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import Cards from "./components/cards/Cards";
 import PersonRectangle from "./components/PersonRectangle/PersonRectangle";
+import Error from "./components/error/Error";
+import Loader from "./components/loader/Loader";
 
 function App() {
   const [products, setProducts] = useState([]);
-  const [Isloading, setIsloading] = useState(false);
+  const [isloading, setIsloading] = useState(false);
   const [error, setError] = useState("");
   useEffect(function () {
     async function fetchStore() {
@@ -28,22 +30,10 @@ function App() {
   return (
     <div className="container">
       <PersonRectangle />
-      {Isloading && <Loader />}
-      {!Isloading && !error && <Cards products={products} />}
+      {isloading && <Loader />}
+      {!isloading && !error && <Cards products={products} />}
       {error && <Error message={error} />}
     </div>
-  );
-}
-
-function Loader() {
-  return <div className="loader"></div>;
-}
-
-function Error({ message }) {
-  return (
-    <p className="error">
-      <span>⛔</span> {message}
-    </p>
   );
 }
 
