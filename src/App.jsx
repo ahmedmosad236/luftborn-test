@@ -16,7 +16,6 @@ function App() {
         const res = await fetch("https://fakestoreapi.com/products?limit=10");
         if (!res.ok) throw new Error("There is error with data fetching");
         const data = await res.json();
-        console.log(data);
         setProducts(data);
         setError("");
       } catch (err) {
